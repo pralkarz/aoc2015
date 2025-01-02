@@ -32,7 +32,7 @@ def part_two(boxes)
     a = 2 * length + 2 * width
     b = 2 * width + 2 * height
     c = 2 * height + 2 * length
-    
+
     shortest_perimeter = a
     if b < shortest_perimeter
       shortest_perimeter = b
@@ -51,4 +51,3 @@ end
 
 puts part_one(input)
 puts part_two(input)
-

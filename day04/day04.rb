@@ -21,4 +21,3 @@ end
 
 puts both_parts(input, "00000")
 puts both_parts(input, "000000")
-

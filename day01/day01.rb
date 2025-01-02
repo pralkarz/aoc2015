@@ -35,4 +35,3 @@ end
 
 puts part_one(input)
 puts part_two(input)
-

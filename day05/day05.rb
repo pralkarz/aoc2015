@@ -12,9 +12,9 @@ def part_one(strings)
     for i in 0..l - 1
       if i < l - 1
         case s[i..i + 1]
-          when "ab", "cd", "pq", "xy"
-            has_disallowed_substring = true
-            break
+        when "ab", "cd", "pq", "xy"
+          has_disallowed_substring = true
+          break
         end
 
         if !has_double_letter && s[i] == s[i + 1]
@@ -23,8 +23,8 @@ def part_one(strings)
       end
 
       case s[i]
-        when "a", "e", "i", "o", "u"
-          vowels += 1
+      when "a", "e", "i", "o", "u"
+        vowels += 1
       end
     end
 
@@ -44,7 +44,7 @@ def part_two(strings)
     has_palindrome = false
     i = 0
     l = s.length
-    while i < l do
+    while i < l
       if i < l - 1
         if !pairs.add?(s[i..i + 1])
           has_duplicate_pair = true
@@ -63,7 +63,7 @@ def part_two(strings)
 
       i += 1
     end
-    
+
     if has_duplicate_pair && has_palindrome
       nice_strings += 1
     end
@@ -74,4 +74,3 @@ end
 
 puts part_one(input)
 puts part_two(input)
-
